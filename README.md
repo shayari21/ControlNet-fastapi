@@ -9,8 +9,6 @@ A FastAPI-based backend for generating images using ControlNet, enabling edge de
 - [Usage](#usage)  
 - [API Endpoints](#api-endpoints)  
 - [Docker Support](#docker-support)  
-- [Contributing](#contributing)  
-- [License](#license)  
 
 ---
 
@@ -33,6 +31,12 @@ This project integrates **ControlNet** with **FastAPI**, allowing users to gener
 ## Installation  
 
 ### 1. Clone the Repository  
+
+```bash
+git clone https://github.com/shayari21/ControlNet-fastapi.git
+cd ControlNet-fastapi
+'''
+### 2. Clone the Repository  
 
 ```bash
 git clone https://github.com/shayari21/ControlNet-fastapi.git
