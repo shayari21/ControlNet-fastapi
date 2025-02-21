@@ -55,7 +55,7 @@ cd app
 uvicorn main:app --host 0.0.0.0 --port 8000
 ```
 ## 4. Usage
-Once the server is running, open `[http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)` in your browser to access the interactive API documentation.
+Once the server is running, open `http://127.0.0.1:8000/docs` in your browser to access the interactive API documentation.
 
 ## Docker Support
 ### 1. Build Docker Image (From ControlNet-fastapi main directory)
@@ -88,6 +88,7 @@ Here are some useful references related to **ControlNet** and **FastAPI**:
 
 🔗 **ControlNet Paper**: [Adding Conditional Control to Text-to-Image Diffusion Models](https://arxiv.org/abs/2302.05543)  
 🔗 **ControlNet Repository**: `https://github.com/lllyasviel/ControlNet` 
+
 🔗 **FastAPI Documentation**: [FastAPI Official Docs](https://fastapi.tiangolo.com/)  
 🔗 **Uvicorn ASGI Server**: [Uvicorn GitHub](https://github.com/encode/uvicorn)  
 🔗 **Docker Documentation**: [Docker Docs](https://docs.docker.com/)  
