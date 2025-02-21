@@ -1,3 +1,13 @@
+import sys
+import os
+
+# Get the parent directory of the current script (ControlNet/)
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))  
+CONTROLNET_DIR = os.path.dirname(BASE_DIR)  
+
+# Add ControlNet directory to sys.path
+sys.path.append(CONTROLNET_DIR)
+
 from share import *
 import config
 
