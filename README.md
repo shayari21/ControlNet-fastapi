@@ -57,17 +57,25 @@ uvicorn main:app --host 0.0.0.0 --port 8000
 ## 4. Usage
 Once the server is running, open `http://127.0.0.1:8000/docs` in your browser to access the interactive API documentation.
 
+![image](https://github.com/user-attachments/assets/fb7382d3-a3fe-4bb4-b2f4-9d523840daec)
+
+![image](https://github.com/user-attachments/assets/d4fd80cc-3d9a-4473-8e50-9c19482d200f)
+
 ## Docker Support
 ### 1. Build Docker Image (From `ControlNet-fastapi main directory`)
 
 ```bash
 docker build -t controlnet-fastapi .
 ```
+![image](https://github.com/user-attachments/assets/d6833adb-d839-49c5-9322-c4a062308efa)
+
 ### 2. Run Container
 
 ```bash
 docker run -gpus all -p 8000:8000 controlnet-fastapi
 ```
+![image](https://github.com/user-attachments/assets/b6051afe-e4be-434c-a89c-13054d9031d2)
+
 ### 3. Test API 
 ```bash
 curl -X 'POST' \
@@ -78,7 +86,9 @@ curl -X 'POST' \
   -F 'prompt=bird'
 ```
 or open `http://127.0.0.1:8000/docs` in your browser to access the interactive API documentation similar to local usage.
+![image](https://github.com/user-attachments/assets/211aa8b9-2ff5-4f53-ba0f-5ed960b5470e)
 
+![image](https://github.com/user-attachments/assets/da802e45-2249-4e4f-b2b0-90c585e3e3f6)
 
 ---
 
