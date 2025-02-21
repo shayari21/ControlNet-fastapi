@@ -1,4 +1,4 @@
-# ControlNet-FastAPI 🚀  
+# ControlNet-FastAPI  
 
 A FastAPI-based backend for generating images using ControlNet, enabling edge detection-based image generation with AI.  
 
@@ -6,8 +6,6 @@ A FastAPI-based backend for generating images using ControlNet, enabling edge de
 - [Overview](#overview)  
 - [Features](#features)  
 - [Installation](#installation)  
-- [Usage](#usage)  
-- [API Endpoints](#api-endpoints)  
 - [Docker Support](#docker-support)  
 
 ---
@@ -24,8 +22,7 @@ This project integrates **ControlNet** with **FastAPI**, allowing users to gener
 ✅ Integration with **ControlNet** for image generation using Denoising Diffusion Implicit Models(DDIM)
 ✅ **Dockerized** for easy deployment  
 ✅ Uses **Conda environment** for dependency management  
-✅ Supports all applications originally supported by ControlNet.
-
+✅ Supports all applications originally supported by ControlNet.(Can be downloaded from: `https://huggingface.co/lllyasviel/ControlNet/tree/main/models` to `ControlNet-fastapi/Models/`
 ---
 
 ## Installation  
@@ -35,9 +32,48 @@ This project integrates **ControlNet** with **FastAPI**, allowing users to gener
 ```bash
 git clone https://github.com/shayari21/ControlNet-fastapi.git
 cd ControlNet-fastapi
-'''
+```
 ### 2. Clone the Repository  
 
+Using environmemt-fastapi.yaml(This is the enhanced version of the original environment.yaml):
 ```bash
 git clone https://github.com/shayari21/ControlNet-fastapi.git
 cd ControlNet-fastapi
+```
+Using pip:
+```bash
+pip install -r requirements.txt
+```
+### 3. Run the FastAPI Server
+```bash
+cd app
+uvicorn main:app --host 0.0.0.0 --port 8000
+```
+## 4. Usage
+Once the server is running, open `[http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)` in your browser to access the interactive API documentation.
+
+## Docker Support
+### 1. Build Docker Image (From ControlNet-fastapi main directory)
+
+```bash
+docker build -t controlnet-fastapi .
+```
+### 2. Run Container
+
+```bash
+docker run -gpus all -p 8000:8000 controlnet-fastapi
+```
+### 3. Test API 
+```bash
+curl -X 'POST' \
+  'http://127.0.0.1:8000/generate_image/' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: multipart/form-data' \
+  -F 'file=@bird.png;type=image/png' \
+  -F 'prompt=bird'
+```
+or open `[http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)` in your browser to access the interactive API documentation similar to local usage.
+
+
+
+
