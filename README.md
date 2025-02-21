@@ -72,6 +72,7 @@ docker build -t controlnet-fastapi .
 ### 2. Run Container
 
 ```bash
+cd ..
 docker run -gpus all -p 8000:8000 controlnet-fastapi
 ```
 ![image](https://github.com/user-attachments/assets/b6051afe-e4be-434c-a89c-13054d9031d2)
