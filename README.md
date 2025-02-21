@@ -58,7 +58,7 @@ uvicorn main:app --host 0.0.0.0 --port 8000
 Once the server is running, open `http://127.0.0.1:8000/docs` in your browser to access the interactive API documentation.
 
 ## Docker Support
-### 1. Build Docker Image (From ControlNet-fastapi main directory)
+### 1. Build Docker Image (From `ControlNet-fastapi main directory`)
 
 ```bash
 docker build -t controlnet-fastapi .
