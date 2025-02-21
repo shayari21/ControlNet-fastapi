@@ -80,5 +80,16 @@ curl -X 'POST' \
 or open `http://127.0.0.1:8000/docs` in your browser to access the interactive API documentation similar to local usage.
 
 
+---
+
+## 📖 References  
+
+Here are some useful references related to **ControlNet** and **FastAPI**:  
+
+🔗 **ControlNet Paper**: [Adding Conditional Control to Text-to-Image Diffusion Models](https://arxiv.org/abs/2302.05543)  
+🔗 **ControlNet Repository**: `https://github.com/lllyasviel/ControlNet` 
+🔗 **FastAPI Documentation**: [FastAPI Official Docs](https://fastapi.tiangolo.com/)  
+🔗 **Uvicorn ASGI Server**: [Uvicorn GitHub](https://github.com/encode/uvicorn)  
+🔗 **Docker Documentation**: [Docker Docs](https://docs.docker.com/)  
 
 
