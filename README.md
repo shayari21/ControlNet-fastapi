@@ -65,6 +65,7 @@ Once the server is running, open `http://127.0.0.1:8000/docs` in your browser to
 ### 1. Build Docker Image (From `ControlNet-fastapi main directory`)
 
 ```bash
+cd ..
 docker build -t controlnet-fastapi .
 ```
 ![image](https://github.com/user-attachments/assets/d6833adb-d839-49c5-9322-c4a062308efa)
@@ -72,7 +73,6 @@ docker build -t controlnet-fastapi .
 ### 2. Run Container
 
 ```bash
-cd ..
 docker run -gpus all -p 8000:8000 controlnet-fastapi
 ```
 ![image](https://github.com/user-attachments/assets/b6051afe-e4be-434c-a89c-13054d9031d2)
