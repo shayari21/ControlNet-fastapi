@@ -16,13 +16,18 @@ This project integrates **ControlNet** with **FastAPI**, allowing users to gener
 
 ---
 
-## Features  
+## ✨ Features  
 
-✅ FastAPI-based backend for handling input in the form of image and prompts requests  
-✅ Integration with **ControlNet** for image generation using Denoising Diffusion Implicit Models(DDIM)
+✅ **FastAPI-based backend** for handling image and prompt-based input requests  
+✅ **Integration with ControlNet** for AI-powered image generation using **Denoising Diffusion Implicit Models (DDIM)**  
 ✅ **Dockerized** for easy deployment  
 ✅ Uses **Conda environment** for dependency management  
-✅ Supports all applications originally supported by ControlNet.(Can be downloaded from: `https://huggingface.co/lllyasviel/ControlNet/tree/main/models` to `ControlNet-fastapi/Models/`
+✅ Supports all applications originally supported by **ControlNet**  
+
+📥 **Download ControlNet models from:**  
+🔗 [Hugging Face - ControlNet Models](https://huggingface.co/lllyasviel/ControlNet/tree/main/models)  
+📁 **Place the downloaded models in:** `ControlNet-fastapi/Models/`  
+
 ---
 
 ## Installation  
