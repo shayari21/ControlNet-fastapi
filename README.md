@@ -72,7 +72,7 @@ curl -X 'POST' \
   -F 'file=@bird.png;type=image/png' \
   -F 'prompt=bird'
 ```
-or open `[http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)` in your browser to access the interactive API documentation similar to local usage.
+or open `http://127.0.0.1:8000/docs` in your browser to access the interactive API documentation similar to local usage.
 
 
 
