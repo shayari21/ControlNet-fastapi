@@ -10,7 +10,7 @@ A FastAPI-based backend for generating images using ControlNet, enabling edge de
 
 ---
 
-## Overview  
+## 📝 Overview  
 
 This project integrates **ControlNet** with **FastAPI**, allowing users to generate AI-driven images using edge detection. The API processes input images and generates corresponding output images based on the ControlNet model.  
 
