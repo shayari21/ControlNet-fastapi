@@ -62,6 +62,7 @@ in your browser to access the interactive API documentation.
 
 ## Docker Support
 ### 1. Build Docker Image (From `ControlNet-fastapi main directory`)
+Run the `Dockerfile` in `ControlNet-fastapi\` directory. The `Dockerfile` creates a conda environment inside the docker image using `environment_fastapi.yaml`.
 
 ```bash
 cd ..
