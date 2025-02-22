@@ -46,12 +46,7 @@ conda env create -f environment_fastapi.yaml
 conda activate controlNet
 
 ```
-Using pip:
-```bash
-conda create -n controlNet python=3.9
-pip install -r requirements.txt
-conda activate controlNet
-```
+
 ### 3. Run the FastAPI Server
 ```bash
 cd app
