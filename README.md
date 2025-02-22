@@ -42,13 +42,13 @@ cd ControlNet-fastapi
 
 Using environmemt-fastapi.yaml(This is the enhanced version of the original environment.yaml):
 ```bash
-conda env create -f environment-fastapi.yaml
+conda env create -f environment_fastapi.yaml
 conda activate controlNet
 
 ```
 Using pip:
 ```bash
-conda create -n environment-fastapi python=3.9
+conda create -n controlNet python=3.9
 pip install -r requirements.txt
 conda activate controlNet
 ```
