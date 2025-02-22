@@ -38,16 +38,19 @@ This project integrates **ControlNet** with **FastAPI**, allowing users to gener
 git clone https://github.com/shayari21/ControlNet-fastapi.git
 cd ControlNet-fastapi
 ```
-### 2. Clone the Repository  
+### 2. Setting up environment and dependecies 
 
 Using environmemt-fastapi.yaml(This is the enhanced version of the original environment.yaml):
 ```bash
-git clone https://github.com/shayari21/ControlNet-fastapi.git
-cd ControlNet-fastapi
+conda env create -f environment-fastapi.yaml
+conda activate controlNet
+
 ```
 Using pip:
 ```bash
+conda create -n environment-fastapi python=3.9
 pip install -r requirements.txt
+conda activate controlNet
 ```
 ### 3. Run the FastAPI Server
 ```bash
@@ -55,7 +58,8 @@ cd app
 uvicorn main:app --host 0.0.0.0 --port 8000
 ```
 ## 4. Usage
-Once the server is running, open `http://127.0.0.1:8000/docs` in your browser to access the interactive API documentation.
+Once the server is running, open `http://127.0.0.1:8000/docs` 
+in your browser to access the interactive API documentation.
 
 ![image](https://github.com/user-attachments/assets/fb7382d3-a3fe-4bb4-b2f4-9d523840daec)
 
