@@ -29,7 +29,20 @@ from utils import rgb2lab,lab2rgb,rgb2yuv,yuv2rgb,srgb2lin,lin2srgb,lin2srgb,tak
 
 
 class ControlNetModel:
+    """
+    A class for generating synthetic images using ControlNet and Canny Edge detection.
+
+    Attributes:
+        apply_canny (CannyDetector): An instance of the Canny Edge Detector.
+        model (torch.nn.Module): The ControlNet model for image generation.
+        ddim_sampler (DDIMSampler): A sampler for generating images using DDIM.
+    """
+ 
     def __init__(self):
+        """
+        Initializes the ControlNetModel by loading the pre-trained model and Canny Edge Detector.
+        """
+         
         # Load the pre-trained model 
         # Load Canny Edge Detector
         self.apply_canny = CannyDetector()
@@ -51,6 +64,16 @@ class ControlNetModel:
     
 
     def generate_synthetic_image(self, input_image, prompt):
+        """
+        Generates a synthetic image using ControlNet with a given input image and text prompt.
+
+        Args:
+            input_image (numpy.ndarray): The input image in RGB format as a NumPy array.
+            prompt (str): The text prompt to guide the image generation process.
+
+        Returns:
+            PIL.Image: The final generated image, combined with input and edge-detected images.
+        """
         # Generate synthetic image from the model, typically with input in the form of image and text prompt
 
         #setting parameters
