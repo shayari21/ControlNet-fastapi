@@ -25,7 +25,7 @@ This project integrates **ControlNet** with **FastAPI**, allowing users to gener
 
 ✅ FastAPI-based backend for handling input in the form of image and prompts requests  
 ✅ Integration with **ControlNet** for image generation using Denoising Diffusion Implicit Models(DDIM)
-✅ **Dockerized** for easy deployment  
+✅  **Dockerized** for easy deployment  
 ✅ Uses **Conda environment** for dependency management  
 ✅ Supports all applications originally supported by ControlNet.
 
