@@ -38,47 +38,8 @@ This project integrates **ControlNet** with **FastAPI**, allowing users to gener
 ```bash
 git clone https://github.com/shayari21/ControlNet-fastapi.git
 cd ControlNet-fastapi
-=======
-# ControlNet-FastAPI  
-
-A FastAPI-based backend for generating images using ControlNet, enabling edge detection-based image generation with AI.  
-
-## Table of Contents  
-- [Overview](#overview)  
-- [Features](#features)  
-- [Installation](#installation)  
-- [Docker Support](#docker-support)  
-
----
-
-## 📝 Overview  
-
-This project integrates **ControlNet** with **FastAPI**, allowing users to generate AI-driven images using edge detection. The API processes input images and generates corresponding output images based on the ControlNet model.  
-
----
-
-## ✨ Features  
-
-✅ **FastAPI-based backend** for handling image and prompt-based input requests  
-✅ **Integration with ControlNet** for AI-powered image generation using **Denoising Diffusion Implicit Models (DDIM)**  
-✅ **Dockerized** for easy deployment  
-✅ Uses **Conda environment** for dependency management  
-✅ Supports all applications originally supported by **ControlNet**  
-
-📥 **Download ControlNet models from:**  
-🔗 [Hugging Face - ControlNet Models](https://huggingface.co/lllyasviel/ControlNet/tree/main/models)  
-📁 **Place the downloaded models in:** `ControlNet-fastapi/Models/`  
-
----
-
-## Installation  
-
-### 1. Clone the Repository  
-
-```bash
-git clone https://github.com/shayari21/ControlNet-fastapi.git
-cd ControlNet-fastapi
 ```
+
 ### 2. Setting up environment and dependecies 
 
 Using environmemt-fastapi.yaml(This is the enhanced version of the original environment.yaml):
@@ -143,5 +104,3 @@ Here are some useful references related to **ControlNet** and **FastAPI**:
 🔗 **Uvicorn ASGI Server**: [Uvicorn GitHub](https://github.com/encode/uvicorn)  
 🔗 **Docker Documentation**: [Docker Docs](https://docs.docker.com/)  
 
-
->>>>>>> 9f5c689a81a620d220079117acfd4cb60ac7dad8
